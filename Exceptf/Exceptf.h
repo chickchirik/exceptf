@@ -28,7 +28,7 @@ public:
         char* buffer = new char[sizeof(char) * (bufSize + 10)];
         vsnprintf(buffer, bufSize + 10, format, copyArgs);
         msg.append(buffer);
-        delete buffer;
+        delete[] buffer;
         va_end(origArgs);
         va_end(copyArgs);
     }
