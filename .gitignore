@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# System files
+.DS_Store
+
+# Project build files
+/bin/*
+/build/*
+/.idea/*
