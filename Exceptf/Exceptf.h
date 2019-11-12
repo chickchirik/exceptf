@@ -25,7 +25,7 @@ public:
         va_list copyArgs;
         va_copy(copyArgs, origArgs);
         size_t bufSize = vsnprintf(nullptr, 0, format, origArgs);
-        char* buffer = new char[sizeof(char) * (bufSize + 10)];
+        char* buffer   = new char[sizeof(char) * (bufSize + 10)];
         vsnprintf(buffer, bufSize + 10, format, copyArgs);
         msg.append(buffer);
         delete[] buffer;
