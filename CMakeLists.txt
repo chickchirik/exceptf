@@ -18,5 +18,8 @@ elseif (${CMAKE_CXX_COMPILER_ID} STREQUAL "MSVC")
     endif()
 endif()
 
+# Add searching directiry
+include_directories(Exceptf)
+
 # Look in the subdirectories to find its CMakeLists.txt so we can build the executable
 add_subdirectory(example)
