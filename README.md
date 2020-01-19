@@ -14,14 +14,11 @@ Custom exception class with message formatting feature.
 ```bash
 $ mkdir bin
 $ mkdir build && cd build
+$ cmake -G  *your generator*
 $ -DCMAKE_BUILD_TYPE=Debug ../
-$ make
+$ make -j 2
 $ make install
 $ cd..
-```
-or
-```bash
-$ mkdir bin; mkdir build; cd build; cmake -DCMAKE_BUILD_TYPE=Debug ../; make ;make install; cd..
 ```
 
 ### Running
